@@ -68,7 +68,6 @@ dependencies = [
     'transformers>=0.30',
     'marsilea',
     'wandb',
-    'pyarrow==20.0.0',
     'flowsom',
     'PhenoGraph',
     'pacmap',
