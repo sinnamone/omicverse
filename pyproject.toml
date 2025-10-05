@@ -76,6 +76,7 @@ dependencies = [
     'pacmap',
     'fasttreeshap',
     'fcsy',
+    'scvi-tools>=1.4.0',
     'cytonormpy',
     'scFates'
 
