@@ -39,20 +39,6 @@ Examples:
     >>> adata = agent.run("leiden clustering resolution=1.0", adata)
 """
 
-# Fix PyArrow compatibility issue
-# PyExtensionType was renamed to ExtensionType in newer versions
-try:
-    import pyarrow
-    if hasattr(pyarrow, 'ExtensionType') and not hasattr(pyarrow, 'PyExtensionType'):
-        pyarrow.PyExtensionType = pyarrow.ExtensionType
-except ImportError:
-    pass
-
-try:
-    from importlib.metadata import version
-except ModuleNotFoundError:
-    from pkg_resources import get_distribution
-    version = lambda name: get_distribution(name).version
 
 # Core submodules - direct imports
 from . import single
@@ -63,17 +49,6 @@ from . import pl
 # External modules
 from . import external
 
-# Optional modules
-try:
-    from . import llm
-except ImportError:
-    llm = None
-
-# Optional datacollect module
-try:
-    from .external import datacollect
-except ImportError:
-    datacollect = None
 
 # Essential utilities - keep these as direct imports for compatibility
 from .utils._data import read
