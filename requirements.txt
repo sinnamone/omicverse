@@ -1,5 +1,5 @@
 scipy
-scikit-image == 0.21.0
+scikit-image
 omicverse
 pandas
 scanpy
@@ -26,23 +26,12 @@ igraph
 phate
 jinja2 == 3.1.2
 griffe == 0.26.0
-mkdocs == 1.4.2
-#mkdocs-jupyter==0.23.0
-mkdocs-mermaid2-plugin==1.1.1
-mkdocs-jupyter
-mkdocs-material==9.1.2
-mkdocs-glightbox==0.3.2
-mkdocstrings == 0.20.0
-mkdocs-gen-files ==0.4.0
-mkdocstrings-python ==0.9.0
-mkdocs-autorefs==0.4.1
 python-dotplot
 metatime
 tensorboard
 mellon
 ctxcore
 pydeseq2 > 0.3
-mkdocs-plotly-plugin
 bioservices
 tomli
 requests
